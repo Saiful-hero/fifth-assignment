@@ -1,0 +1,29 @@
+#cart-meal{
+    display: grid;
+    grid-template-columns : repeat(4,5fr);
+    grid-gap: 40px;
+}
+
+.meal{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px 10px ;
+    text-align: center;
+    width: 320px;
+}
+
+
+#cart-meal img{
+    width: 300px;
+}
+#info img{
+    width: 300px;
+}
+#info {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px 10px ;
+    text-align: center;
+    width: 320px;
+    flex-direction:row-reverse;
+}
