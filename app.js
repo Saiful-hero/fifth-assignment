@@ -31,20 +31,21 @@ const displayMealInDetails = id => {
 }
 
 const renderMealInfo = info =>{
-    // const shortForm = info.meals[0];
+    const shortForm = info.meals[0];
     // console.log(shortForm.idMeal);
   const mealDiv =  document.getElementById('info');
   mealDiv.innerHTML = `
   <img src="${info.meals[0].strMealThumb}">
   <h5>${info.meals[0].strMeal}</h5>
   <h6>Ingredients</h6>
+  <p>${shortForm.strMeasure1} ${shortForm.strIngredient1}</p>
+  <p>${shortForm.strMeasure2} ${shortForm.strIngredient2}</p>
+  <p>${shortForm.strMeasure3} ${shortForm.strIngredient3}</p>
+  <p>${shortForm.strMeasure4} ${shortForm.strIngredient4}</p>
+  <p>${shortForm.strMeasure5} ${shortForm.strIngredient5}</p>
+  <p>${shortForm.strMeasure6} ${shortForm.strIngredient6}</p>
   `
-  const ul = document.getElementById('list')
-  info.meals.forEach(element => {
-      console.log(element.strIngredient1);
-      console.log(element);
-     const li = document.createElement('li');
-      li.innerText = element.strMeal;
-     ul.appendChild(li);
-  });
+    
+      
+ 
 }
